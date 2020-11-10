@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <link
+      as="style"
+      rel="stylesheet preload prefetch"
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/works.css" />
+    <title>Works: Jacob Kim-Lee</title>
+    <!--
+		<meta name="keywords" content="composer, music, classical, portfolio, visualizer, javascript, creative, web" />
+		<meta name="author" content="Piotr Dogoński" />
+-->
+  </head>
+
+  <body>
+    <svg class="hidden">
+      <symbol id="icon-soundon" viewBox="0 0 32 31">
+        <title>Play</title>
+        <path
+          d="M6.405 9.239H0v13.128h6.405l12.474 8.316V.923L6.405 9.239zM5.75 20.491H1.875v-9.377h3.876v9.377zm11.252 6.687l-9.376-6.25v-10.25l9.376-6.25v22.75zm10.884-21.32c5.484 5.483 5.484 14.406 0 19.89l-1.326-1.326c4.753-4.752 4.753-12.486 0-17.239l1.326-1.326zm-2.652 2.651c4.021 4.022 4.021 10.566 0 14.587l-1.326-1.326c3.29-3.29 3.29-8.644 0-11.935l1.326-1.326zm-2.652 2.652a6.571 6.571 0 010 9.283l-1.327-1.326a4.694 4.694 0 000-6.63l1.327-1.327z"
+        />
+      </symbol>
+      <symbol id="icon-soundoff" viewBox="0 0 32 31">
+        <title>Pause</title>
+        <path
+          d="M6.409 9.11H0v13.135h6.409l12.48 8.32V.79L6.41 9.109zm-.655 11.258H1.876v-9.382h3.878v9.382zm11.26 6.691L7.63 20.804V10.55l9.382-6.255V27.06zM32 11.65l-1.327-1.326-4.027 4.027-4.028-4.027-1.327 1.326 4.028 4.028-4.028 4.028 1.327 1.327 4.027-4.028 4.028 4.028L32 19.705l-4.028-4.028L32 11.65z"
+        />
+      </symbol>
+      <symbol id="back-to-works" viewBox="0 0 32 31">
+        <title>Back</title>
+        <path
+          d="M159.64,11.76L11.76,159.64L0,147.89L147.89,0L159.64,11.76z M11.76,159.64l136.31,136.31l11.76-11.76L23.51,147.88
+L11.76,159.64z"
+        />
+      </symbol>
+    </svg>
+
+    <header>
+      <div class="composersname">
+        <h1 id="name">Jacob Kim-Lee</h1>
+        <h1>Composer</h1>
+      </div>
+      <nav>
+        <a href="index.html" class="link">HOME</a>
+        <a href="bio.html" class="link">BIO</a>
+        <a href="works.html" class="active link">WORKS</a>
+        <a href="contact.html" class="link">CONTACT</a>
+      </nav>
+      <button class="burger">
+        <span class="burger__box">
+          <span class="burger__lines"></span>
+        </span>
+      </button>
+    </header>
+    <div class="player">
+      <button class="back button" id="back-button">
+        <div class="back-div"></div>
+      </button>
+      <button class="toggle toggle--on button" id="toggle-btn">
+        <svg class="toggle__icon toggle__icon--on">
+          <use xlink:href="#icon-soundon"></use>
+        </svg>
+        <svg class="toggle__icon toggle__icon--off">
+          <use xlink:href="#icon-soundoff"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div id="allskewed">
+      <div class="skewed copy" id="skewed1copy">
+        <h5 class="title">'Birds Still Sing'</h5>
+      </div>
+      <div class="skewed copy" id="skewed2copy">
+        <h5 class="title">'Desert Steps'</h5>
+      </div>
+      <div class="skewed copy" id="skewed3copy">
+        <h5 class="title">'Kepler-1649c'</h5>
+      </div>
+      <div class="skewed copy" id="skewed4copy">
+        <h5 class="title">'Scary One'</h5>
+      </div>
+      <div class="skewed copy" id="skewed5copy">
+        <h5 class="title">'Windy Thought'</h5>
+      </div>
+      <div class="skewed" id="skewed1">
+        <h5 class="title">'Birds Still Sing'</h5>
+      </div>
+      <div class="skewed" id="skewed2">
+        <h5 class="title">'Desert Steps'</h5>
+      </div>
+      <div class="skewed" id="skewed3">
+        <h5 class="title">'Kepler-1649c'</h5>
+      </div>
+      <div class="skewed" id="skewed4">
+        <h5 class="title">'Scary One'</h5>
+      </div>
+      <div class="skewed" id="skewed5">
+        <h5 class="title">'Windy Thought'</h5>
+      </div>
+    </div>
+    <main id="allcontents">
+      <div id="content1" class="content">
+        <h3 class="content__subtitle">2018</h3>
+        <h2 class="content__title">Birds Still Sing</h2>
+        <div class="content__description">
+          The composition was created as a response to a book with the same
+          title I read during my trip to the countryside. This piece is part of
+          a miniature series for solo instruments. The recording comes from the
+          premiere during the concert in Copenhagen.
+        </div>
+        <div class="content__credits">
+          Performing: tenor sax - Lucas Bjerg
+          <br />
+          Recording: Maheen Adamson, Chanice Reeves
+        </div>
+      </div>
+      <div id="content2" class="content">
+        <h3 class="content__subtitle">2017</h3>
+        <h2 class="content__title">Desert Steps</h2>
+        <div class="content__description">
+          Soundtrack for new CGI animated short film, yet to be released, made
+          by the independent film company, Fudge Park.
+        </div>
+        <div class="content__credits">
+          Performing: Simple Ensemble, Jacob Kim-Lee
+        </div>
+      </div>
+      <div id="content3" class="content">
+        <h3 class="content__subtitle">2020</h3>
+        <h2 class="content__title">Kepler-1649c</h2>
+        <div class="content__description">
+          I dedicated this piece for voice and computer to the astronomer, Felix
+          McGee who is also a friend of mine. I performed it with the singer,
+          Akemi Sato and recorded it in my own home studio. I used the samples
+          of Kepler-1649c electro-magnetic waves converted into the sound made
+          by NASA. All of the sounds are highly transposed and transformed in
+          various ways.
+        </div>
+        <div class="content__credits">
+          Performing: soprano - Akemi Sato, Jacob Kim-Lee
+          <br />
+          Recording: Jacob Kim-Lee
+        </div>
+      </div>
+      <div id="content4" class="content">
+        <h3 class="content__subtitle">2019</h3>
+        <h2 class="content__title">Scary One</h2>
+        <div class="content__description">
+          A piece commissioned by a contemporary theater group called "Never
+          Newer" from Dresden. The music is the soundtrack for a theater play
+          about tough emotions.
+        </div>
+        <div class="content__credits">Performing: Augenblick Ensemble</div>
+      </div>
+      <div id="content5" class="content">
+        <h3 class="content__subtitle">2019</h3>
+        <h2 class="content__title">Windy Though</h2>
+        <div class="content__description">
+          This piece is an effect of the cooperation with the Greek composer,
+          Thalis Logoulis on Contemporary Music Festival in Athens. It is a
+          recording of improvisation with the use of the piano and plenty of
+          digital techniques.
+        </div>
+        <div class="content__credits">
+          Performing: Thalis Logoulis, Jacob Kim-Lee
+        </div>
+      </div>
+    </main>
+    <button class="show-description" id="descriptionBtn">
+      Show description
+    </button>
+    <div id="p5_loading" class="p5_loading">
+      <div class="p5_loading__outer"></div>
+      <div class="p5_loading__inner"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/works.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

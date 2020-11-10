@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="icon" href="favicon.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link
+      as="style"
+      rel="stylesheet preload prefetch"
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap"
+      type="text/css"
+    />
+    <title>Contact: Jacob Kim-Lee</title>
+  </head>
+  <body>
+    <header>
+      <div class="composersname">
+        <h1 id="name">Jacob Kim-Lee</h1>
+        <h1>Composer</h1>
+      </div>
+      <nav>
+        <a href="index.html" class="link">HOME</a>
+        <a href="bio.html" class="link">BIO</a>
+        <a href="works.html" class="link">WORKS</a>
+        <a href="contact.html" class="active link">CONTACT</a>
+      </nav>
+      <button class="burger">
+        <span class="burger__box">
+          <span class="burger__lines"></span>
+        </span>
+      </button>
+    </header>
+    <main id="contact">
+      <div class="contact-img"></div>
+      <a class="arrow-bar" href="#scroll2"> <div class="arrow"></div></a>
+      <div class="form" id="scroll2">
+        <div class="wrapper">
+          <p>
+            Do you want me to compose some music for you? Do you want me to
+            perform in your place? Do you want to cooperate with me? Please find
+            me on social media or send me an email.
+          </p>
+          <form id="email-form" action="?" method="POST">
+            <input
+              type="email"
+              name="user-email"
+              placeholder=" Your e-mail"
+              required
+            />
+            <textarea
+              id="message"
+              placeholder=" How can I help you?"
+            ></textarea>
+            <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+            <button type="submit" class="send-button" id="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <a
+          href="https://mail.google.com/mail/"
+          class="base64"
+          target="_blank"
+          id="email"
+        ></a>
+        <a
+          href="https://www.facebook.com/"
+          class="base64"
+          target="_blank"
+          id="facebook"
+        ></a>
+        <a
+          href="https://soundcloud.com/"
+          class="base64"
+          target="_blank"
+          id="soundcloud"
+        ></a>
+        <a
+          href="https://play.spotify.com/"
+          class="base64"
+          target="_blank"
+          id="spotify"
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          class="base64"
+          target="_blank"
+          id="instagram"
+        ></a>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

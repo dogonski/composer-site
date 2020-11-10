@@ -1,0 +1,95 @@
+body {
+  background: #242424;
+  color: #fafafa;
+}
+
+body header nav .link {
+  color: #fafafa;
+}
+
+input,
+textarea,
+select,
+.send-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  border: 2px solid #a37448;
+}
+
+input {
+  outline: none !important;
+  font-family: Khand, sans-serif;
+  color: #fafafa;
+  opacity: 1;
+  background: #242424;
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+textarea {
+  outline: none !important;
+  font-family: Khand, sans-serif;
+  color: #fafafa;
+  opacity: 1;
+  background: #242424;
+  height: 200px;
+  resize: none;
+  overflow: auto;
+}
+
+input:placeholder-shown,
+textarea:placeholder-shown,
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+  outline: none !important;
+  font-family: Khand, sans-serif;
+  color: #fafafa;
+  opacity: 1;
+  background: #242424;
+}
+
+.send-button {
+  display: block;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  background: #242424;
+  border: none;
+  border: 2px solid #a37448;
+  color: #a37448;
+  font-family: Khand, sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.send-button:hover {
+  background: #a37448;
+  color: #fafafa;
+}
+
+p::-moz-selection {
+  background: #a37448;
+  color: #fafafa;
+}
+
+p::selection {
+  background: #a37448;
+  color: #fafafa;
+}
+
+footer .base64 {
+  -webkit-filter: invert(99%) sepia(81%) saturate(350%) hue-rotate(173deg) brightness(117%) contrast(96%);
+          filter: invert(99%) sepia(81%) saturate(350%) hue-rotate(173deg) brightness(117%) contrast(96%);
+}
+/*# sourceMappingURL=contact.css.map */
