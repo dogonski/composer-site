@@ -160,7 +160,7 @@ function track1() {
     };
   };
 
-  var myp5_1 = new p5(s);
+  let myp5_1 = new p5(s);
 }
 //*----------------------------------------
 function track2() {
@@ -223,7 +223,7 @@ function track2() {
       }
     };
   };
-  var myp5_2 = new p5(t);
+  let myp5_2 = new p5(t);
 }
 // //*----------------------------------------
 function track3() {
@@ -298,7 +298,7 @@ function track3() {
     };
   };
 
-  var myp5_3 = new p5(u);
+  let myp5_3 = new p5(u);
 }
 // //*----------------------------------------
 function track4() {
@@ -363,7 +363,7 @@ function track4() {
       }
     };
   };
-  var myp5_4 = new p5(v);
+  let myp5_4 = new p5(v);
 }
 // //*----------------------------------------
 function track5() {
@@ -430,7 +430,7 @@ function track5() {
       }
     };
   };
-  var myp5_5 = new p5(w);
+  let myp5_5 = new p5(w);
 }
 
 exitBtn = document.querySelector("#back-button");

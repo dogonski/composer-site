@@ -32,6 +32,7 @@ body header {
   width: calc(100vw - 30px);
   margin: 0 20px 0 10px;
   height: 10vh;
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,6 +290,8 @@ footer #instagram {
   body header nav .link {
     font-size: 1.6em;
     margin: 40px 0;
+    padding: 0 8px;
+    line-height: 36px;
     text-align: center;
     width: 25vw;
   }
