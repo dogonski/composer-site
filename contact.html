@@ -17,15 +17,17 @@
   </head>
   <body>
     <header>
-      <div class="composersname">
-        <h1 id="name">Jacob Kim-Lee</h1>
-        <h1>Composer</h1>
-      </div>
+      <a href="index.html" class="logo">
+        <div class="logo__box">
+          <h1 class="logo__type logo__type--name">Jacob Kim-Lee</h1>
+          <h1 class="logo__type">Composer</h1>
+        </div>
+      </a>
       <nav>
-        <a href="index.html" class="link">HOME</a>
-        <a href="bio.html" class="link">BIO</a>
-        <a href="works.html" class="link">WORKS</a>
-        <a href="contact.html" class="active link">CONTACT</a>
+        <a href="index.html" class="nav__link">HOME</a>
+        <a href="bio.html" class="nav__link">BIO</a>
+        <a href="works.html" class="nav__link">WORKS</a>
+        <a href="contact.html" class="nav__link nav__link--active">CONTACT</a>
       </nav>
       <button class="burger">
         <span class="burger__box">
@@ -33,9 +35,9 @@
         </span>
       </button>
     </header>
-    <main id="contact">
-      <div class="contact-img"></div>
-      <a class="arrow-bar" href="#scroll2"> <div class="arrow"></div></a>
+    <main class="main main--contact">
+      <div class="main__img main__img--contact"></div>
+      <a class="scroll" href="#scroll2"> <div class="scroll__arrow"></div></a>
       <div class="form" id="scroll2">
         <div class="wrapper">
           <p>
@@ -50,10 +52,7 @@
               placeholder=" Your e-mail"
               required
             />
-            <textarea
-              id="message"
-              placeholder=" How can I help you?"
-            ></textarea>
+            <textarea placeholder=" How can I help you?"></textarea>
             <button type="submit" class="send-button" id="submit">Send</button>
           </form>
         </div>
@@ -63,33 +62,29 @@
       <div class="social">
         <a
           href="https://mail.google.com/mail/"
-          class="base64"
+          class="social__base64 social__base64--email"
           target="_blank"
-          id="email"
         ></a>
         <a
           href="https://www.facebook.com/"
-          class="base64"
+          class="social__base64 social__base64--facebook"
           target="_blank"
-          id="facebook"
         ></a>
         <a
           href="https://soundcloud.com/"
-          class="base64"
+          class="social__base64 social__base64--soundcloud"
           target="_blank"
-          id="soundcloud"
         ></a>
         <a
           href="https://play.spotify.com/"
-          class="base64"
+          class="social__base64 social__base64--spotify"
           target="_blank"
-          id="spotify"
         ></a>
         <a
           href="https://www.instagram.com/"
-          class="base64"
+          class="social__base64 social__base64--instagram"
           target="_blank"
-          id="instagram"
+          class="instagram"
         ></a>
       </div>
     </footer>

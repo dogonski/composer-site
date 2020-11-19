@@ -10,85 +10,85 @@ let playBtn1,
   playBtn5copy,
   exitBtn;
 
-playBtn1 = document.querySelector("#skewed1");
+playBtn1 = document.querySelector(".skewed--1");
 playBtn1.addEventListener("click", () => {
-  document.querySelector("#content1").classList.add("visible");
+  document.querySelector(".content--1").classList.add("visible");
   document.querySelector(".toggle__icon").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("grass");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track1();
 });
 
-playBtn2 = document.querySelector("#skewed2");
+playBtn2 = document.querySelector(".skewed--2");
 playBtn2.addEventListener("click", () => {
-  document.querySelector("#content2").classList.add("visible");
+  document.querySelector(".content--2").classList.add("visible");
   document.querySelector(".toggle__icon").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("cactus");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track2();
 });
 
-playBtn3 = document.querySelector("#skewed3");
+playBtn3 = document.querySelector(".skewed--3");
 playBtn3.addEventListener("click", () => {
-  document.querySelector("#content3").classList.add("visible");
+  document.querySelector(".content--3").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("circle");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track3();
 });
 
-playBtn4 = document.querySelector("#skewed4");
+playBtn4 = document.querySelector(".skewed--4");
 playBtn4.addEventListener("click", () => {
-  document.querySelector("#content4").classList.add("visible");
+  document.querySelector(".content--4").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("walls");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track4();
 });
 
-playBtn5 = document.querySelector("#skewed5");
+playBtn5 = document.querySelector(".skewed--5");
 playBtn5.addEventListener("click", () => {
-  document.querySelector("#content5").classList.add("visible");
+  document.querySelector(".content--5").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("windy");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track5();
 });
 
-playBtn1copy = document.querySelector("#skewed1copy");
+playBtn1copy = document.querySelector(".copy--1");
 playBtn1copy.addEventListener("click", () => {
-  document.querySelector("#content1").classList.add("visible");
+  document.querySelector(".content--1").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("grass");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track1();
 });
 
-playBtn2copy = document.querySelector("#skewed2copy");
+playBtn2copy = document.querySelector(".copy--2");
 playBtn2copy.addEventListener("click", () => {
-  document.querySelector("#content2").classList.add("visible");
+  document.querySelector(".content--2").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("cactus");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track2();
 });
 
-playBtn3copy = document.querySelector("#skewed3copy");
+playBtn3copy = document.querySelector(".copy--3");
 playBtn3copy.addEventListener("click", () => {
-  document.querySelector("#content3").classList.add("visible");
+  document.querySelector(".content--3").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("circle");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track3();
 });
 
-playBtn4copy = document.querySelector("#skewed4copy");
+playBtn4copy = document.querySelector(".copy--4");
 playBtn4copy.addEventListener("click", () => {
-  document.querySelector("#content4").classList.add("visible");
+  document.querySelector(".content--4").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("walls");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track4();
 });
 
-playBtn5copy = document.querySelector("#skewed5copy");
+playBtn5copy = document.querySelector(".copy--5");
 playBtn5copy.addEventListener("click", () => {
-  document.querySelector("#content5").classList.add("visible");
+  document.querySelector(".content--5").classList.add("visible");
   document.querySelector("#p5_loading").classList.add("windy");
-  document.querySelector("#allskewed").classList.add("hidden");
+  document.querySelector(".skewed-container").classList.add("hidden");
   track5();
 });
 

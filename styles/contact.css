@@ -3,7 +3,8 @@ body {
   color: #fafafa;
 }
 
-body header nav .link {
+body header .logo__type,
+body header nav .nav__link {
   color: #fafafa;
 }
 
@@ -88,7 +89,7 @@ p::selection {
   color: #fafafa;
 }
 
-footer .base64 {
+footer .social__base64 {
   -webkit-filter: invert(99%) sepia(81%) saturate(350%) hue-rotate(173deg) brightness(117%) contrast(96%);
           filter: invert(99%) sepia(81%) saturate(350%) hue-rotate(173deg) brightness(117%) contrast(96%);
 }

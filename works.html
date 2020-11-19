@@ -29,7 +29,7 @@
           d="M6.409 9.11H0v13.135h6.409l12.48 8.32V.79L6.41 9.109zm-.655 11.258H1.876v-9.382h3.878v9.382zm11.26 6.691L7.63 20.804V10.55l9.382-6.255V27.06zM32 11.65l-1.327-1.326-4.027 4.027-4.028-4.027-1.327 1.326 4.028 4.028-4.028 4.028 1.327 1.327 4.027-4.028 4.028 4.028L32 19.705l-4.028-4.028L32 11.65z"
         />
       </symbol>
-      <symbol id="back-to-works" viewBox="0 0 32 31">
+      <symbol id="icon-back" viewBox="0 0 32 31">
         <title>Back</title>
         <path
           d="M159.64,11.76L11.76,159.64L0,147.89L147.89,0L159.64,11.76z M11.76,159.64l136.31,136.31l11.76-11.76L23.51,147.88
@@ -39,15 +39,17 @@ L11.76,159.64z"
     </svg>
 
     <header>
-      <div class="composersname">
-        <h1 id="name">Jacob Kim-Lee</h1>
-        <h1>Composer</h1>
-      </div>
+      <a href="index.html" class="logo">
+        <div class="logo__box">
+          <h1 class="logo__type logo__type--name">Jacob Kim-Lee</h1>
+          <h1 class="logo__type">Composer</h1>
+        </div>
+      </a>
       <nav>
-        <a href="index.html" class="link">HOME</a>
-        <a href="bio.html" class="link">BIO</a>
-        <a href="works.html" class="active link">WORKS</a>
-        <a href="contact.html" class="link">CONTACT</a>
+        <a href="index.html" class="nav__link">HOME</a>
+        <a href="bio.html" class="nav__link">BIO</a>
+        <a href="works.html" class="nav__link nav__link--active">WORKS</a>
+        <a href="contact.html" class="nav__link">CONTACT</a>
       </nav>
       <button class="burger">
         <span class="burger__box">
@@ -55,9 +57,9 @@ L11.76,159.64z"
         </span>
       </button>
     </header>
-    <div class="player">
+    <div class="icons-container">
       <button class="back button" id="back-button">
-        <div class="back-div"></div>
+        <div class="back__icon"></div>
       </button>
       <button class="toggle toggle--on button" id="toggle-btn">
         <svg class="toggle__icon toggle__icon--on">
@@ -69,40 +71,40 @@ L11.76,159.64z"
       </button>
     </div>
 
-    <div id="allskewed">
-      <div class="skewed copy" id="skewed1copy">
-        <h5 class="title">'Birds Still Sing'</h5>
+    <div class="skewed-container">
+      <div class="skewed skewed--1">
+        <h5 class="skewed__title">'Birds Still Sing'</h5>
       </div>
-      <div class="skewed copy" id="skewed2copy">
-        <h5 class="title">'Desert Steps'</h5>
+      <div class="skewed skewed--2">
+        <h5 class="skewed__title">'Desert Steps'</h5>
       </div>
-      <div class="skewed copy" id="skewed3copy">
-        <h5 class="title">'Kepler-1649c'</h5>
+      <div class="skewed skewed--3">
+        <h5 class="skewed__title">'Kepler-1649c'</h5>
       </div>
-      <div class="skewed copy" id="skewed4copy">
-        <h5 class="title">'Scary One'</h5>
+      <div class="skewed skewed--4">
+        <h5 class="skewed__title">'Scary One'</h5>
       </div>
-      <div class="skewed copy" id="skewed5copy">
-        <h5 class="title">'Windy Thought'</h5>
+      <div class="skewed skewed--5">
+        <h5 class="skewed__title">'Windy Thought'</h5>
       </div>
-      <div class="skewed" id="skewed1">
-        <h5 class="title">'Birds Still Sing'</h5>
+      <div class="skewed copy copy--1">
+        <h5 class="skewed__title">'Birds Still Sing'</h5>
       </div>
-      <div class="skewed" id="skewed2">
-        <h5 class="title">'Desert Steps'</h5>
+      <div class="skewed copy copy--2">
+        <h5 class="skewed__title">'Desert Steps'</h5>
       </div>
-      <div class="skewed" id="skewed3">
-        <h5 class="title">'Kepler-1649c'</h5>
+      <div class="skewed copy copy--3">
+        <h5 class="skewed__title">'Kepler-1649c'</h5>
       </div>
-      <div class="skewed" id="skewed4">
-        <h5 class="title">'Scary One'</h5>
+      <div class="skewed copy copy--4">
+        <h5 class="skewed__title">'Scary One'</h5>
       </div>
-      <div class="skewed" id="skewed5">
-        <h5 class="title">'Windy Thought'</h5>
+      <div class="skewed copy copy--5">
+        <h5 class="skewed__title">'Windy Thought'</h5>
       </div>
     </div>
-    <main id="allcontents">
-      <div id="content1" class="content">
+    <main class="content-container">
+      <div class="content content--1">
         <h3 class="content__subtitle">2018</h3>
         <h2 class="content__title">Birds Still Sing</h2>
         <div class="content__description">
@@ -117,7 +119,7 @@ L11.76,159.64z"
           Recording: Maheen Adamson, Chanice Reeves
         </div>
       </div>
-      <div id="content2" class="content">
+      <div class="content content--2">
         <h3 class="content__subtitle">2017</h3>
         <h2 class="content__title">Desert Steps</h2>
         <div class="content__description">
@@ -128,7 +130,7 @@ L11.76,159.64z"
           Performing: Simple Ensemble, Jacob Kim-Lee
         </div>
       </div>
-      <div id="content3" class="content">
+      <div class="content content--3">
         <h3 class="content__subtitle">2020</h3>
         <h2 class="content__title">Kepler-1649c</h2>
         <div class="content__description">
@@ -145,7 +147,7 @@ L11.76,159.64z"
           Recording: Jacob Kim-Lee
         </div>
       </div>
-      <div id="content4" class="content">
+      <div class="content content--4">
         <h3 class="content__subtitle">2019</h3>
         <h2 class="content__title">Scary One</h2>
         <div class="content__description">
@@ -155,7 +157,7 @@ L11.76,159.64z"
         </div>
         <div class="content__credits">Performing: Augenblick Ensemble</div>
       </div>
-      <div id="content5" class="content">
+      <div class="content content--5">
         <h3 class="content__subtitle">2019</h3>
         <h2 class="content__title">Windy Though</h2>
         <div class="content__description">

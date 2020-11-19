@@ -2,7 +2,7 @@
 
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
-const links = document.querySelectorAll("nav.nav--active a.link");
+const links = document.querySelectorAll("nav.nav--active a.nav__link");
 
 const handleClick = () => {
   burger.classList.toggle("burger--active");

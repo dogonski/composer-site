@@ -12,7 +12,8 @@ body {
   overflow-y: hidden;
 }
 
-body header nav .link {
+body header .logo__type,
+body header nav .nav__link {
   color: #fafafa;
 }
 
@@ -24,11 +25,11 @@ header {
   z-index: 12;
 }
 
-header nav .link {
+header nav .nav__link {
   color: #fafafa;
 }
 
-.player {
+.icons-container {
   position: fixed;
   margin: 0;
   padding: 50px;
@@ -47,7 +48,7 @@ header nav .link {
   bottom: 0;
 }
 
-.player .button {
+.icons-container .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   background: none;
@@ -60,14 +61,14 @@ header nav .link {
   height: 35px;
 }
 
-.player .button:hover,
-.player .button:focus {
+.icons-container .button:hover,
+.icons-container .button:focus {
   outline: none;
   color: #a37448;
 }
 
-.player .toggle__icon,
-.player .back-icon {
+.icons-container .toggle__icon,
+.icons-container .back__icon {
   display: block;
   right: 50px;
   bottom: 50px;
@@ -77,7 +78,7 @@ header nav .link {
   fill: #fafafa;
 }
 
-.player .back-div {
+.icons-container .back__icon {
   display: block;
   width: 16px;
   height: 2px;
@@ -86,7 +87,7 @@ header nav .link {
   background-color: #fafafa;
 }
 
-.player .back-div::before {
+.icons-container .back__icon::before {
   content: "";
   display: block;
   width: 16px;
@@ -96,7 +97,7 @@ header nav .link {
   background-color: #fafafa;
 }
 
-.player .back-div::after {
+.icons-container .back__icon::after {
   content: "";
   display: block;
   width: 16px;
@@ -106,15 +107,15 @@ header nav .link {
   background-color: #fafafa;
 }
 
-.player .toggle__icon--off {
+.icons-container .toggle__icon--off {
   display: none;
 }
 
-.player .toggle--on .toggle__icon--on {
+.icons-container .toggle--on .toggle__icon--on {
   display: none;
 }
 
-.player .toggle--on .toggle__icon--off {
+.icons-container .toggle--on .toggle__icon--off {
   display: block;
 }
 
@@ -145,7 +146,7 @@ canvas {
   scrollbar-width: none;
 }
 
-#allskewed {
+.skewed-container {
   position: relative;
   width: 100vw;
   left: -6%;
@@ -154,8 +155,8 @@ canvas {
   transition: all 1.2s ease-out;
 }
 
-#allskewed .skewed,
-#allskewed .copies {
+.skewed-container .skewed,
+.skewed-container .copies {
   width: 25vw;
   height: 100vh;
   position: absolute;
@@ -170,48 +171,48 @@ canvas {
   z-index: 5;
 }
 
-#allskewed #skewed1 {
+.skewed-container .skewed--1 {
   left: 0;
 }
 
-#allskewed #skewed2 {
+.skewed-container .skewed--2 {
   left: 25%;
 }
 
-#allskewed #skewed3 {
+.skewed-container .skewed--3 {
   left: 50%;
 }
 
-#allskewed #skewed4 {
+.skewed-container .skewed--4 {
   left: 75%;
 }
 
-#allskewed #skewed5 {
+.skewed-container .skewed--5 {
   left: 100%;
 }
 
-#allskewed #skewed1copy {
+.skewed-container .copy--1 {
   left: 125%;
 }
 
-#allskewed #skewed2copy {
+.skewed-container .copy--2 {
   left: 150%;
 }
 
-#allskewed #skewed3copy {
+.skewed-container .copy--3 {
   left: 175%;
 }
 
-#allskewed #skewed4copy {
+.skewed-container .copy--4 {
   left: 200%;
 }
 
-#allskewed #skewed5copy {
+.skewed-container .copy--5 {
   left: 225%;
 }
 
-#allskewed .skewed::before,
-#allskewed .copied::before {
+.skewed-container .skewed::before,
+.skewed-container .copied::before {
   content: "";
   position: absolute;
   width: 60vw;
@@ -227,83 +228,83 @@ canvas {
   transition: all 1.2s ease-out;
 }
 
-#allskewed .skewed:hover::before,
-#allskewed .copied:hover::before {
+.skewed-container .skewed:hover::before,
+.skewed-container .copied:hover::before {
   -webkit-filter: saturate(1) brightness(1);
           filter: saturate(1) brightness(1);
 }
 
-#allskewed #skewed1::before,
-#allskewed #skewed1copy::before {
+.skewed-container .skewed--1::before,
+.skewed-container .copy--1::before {
   background-image: url(../img/tinified/grass.jpg);
   background-size: cover;
   -webkit-transform: skew(10deg) translate(-24%, -12%);
           transform: skew(10deg) translate(-24%, -12%);
 }
 
-#allskewed #skewed2::before,
-#allskewed #skewed2copy::before {
+.skewed-container .skewed--2::before,
+.skewed-container .copy--2::before {
   background-image: url(../img/tinified/rsz_cactus.jpg);
   background-size: cover;
   -webkit-transform: skew(10deg) translate(-15%, -20%);
           transform: skew(10deg) translate(-15%, -20%);
 }
 
-#allskewed #skewed3::before,
-#allskewed #skewed3copy::before {
+.skewed-container .skewed--3::before,
+.skewed-container .copy--3::before {
   background-image: url(../img/tinified/circle.jpg);
   background-size: cover;
   -webkit-transform: skew(10deg) translate(-42%, -12%);
           transform: skew(10deg) translate(-42%, -12%);
 }
 
-#allskewed #skewed4::before,
-#allskewed #skewed4copy::before {
+.skewed-container .skewed--4::before,
+.skewed-container .copy--4::before {
   background-image: url(../img/tinified/walls.jpg);
   background-size: cover;
   -webkit-transform: skew(10deg) translate(-24%, -15%);
           transform: skew(10deg) translate(-24%, -15%);
 }
 
-#allskewed #skewed5::before,
-#allskewed #skewed5copy::before {
+.skewed-container .skewed--5::before,
+.skewed-container .copy--5::before {
   background-image: url(../img/tinified/windy.jpg);
   background-size: cover;
   -webkit-transform: skew(10deg) translate(0%, -8%);
           transform: skew(10deg) translate(0%, -8%);
 }
 
-#allskewed #skewed1:hover::before,
-#allskewed #skewed1copy:hover::before {
+.skewed-container .skewed--1:hover::before,
+.skewed-container .copy--1:hover::before {
   -webkit-transform: skew(10deg) translate(-24%, -12%) scale(1.01);
           transform: skew(10deg) translate(-24%, -12%) scale(1.01);
 }
 
-#allskewed #skewed2:hover::before,
-#allskewed #skewed2copy:hover::before {
+.skewed-container .skewed--2:hover::before,
+.skewed-container .copy--2:hover::before {
   -webkit-transform: skew(10deg) translate(-15%, -20%) scale(1.01);
           transform: skew(10deg) translate(-15%, -20%) scale(1.01);
 }
 
-#allskewed #skewed3:hover::before,
-#allskewed #skewed3copy:hover::before {
+.skewed-container .skewed--3:hover::before,
+.skewed-container .copy--3:hover::before {
   -webkit-transform: skew(10deg) translate(-42%, -12%) scale(1.01);
           transform: skew(10deg) translate(-42%, -12%) scale(1.01);
 }
 
-#allskewed #skewed4:hover::before,
-#allskewed #skewed4copy:hover::before {
+.skewed-container .skewed--4:hover::before,
+.skewed-container .copy--4:hover::before {
   -webkit-transform: skew(10deg) translate(-24%, -15%) scale(1.01);
           transform: skew(10deg) translate(-24%, -15%) scale(1.01);
 }
 
-#allskewed #skewed5:hover::before,
-#allskewed #skewed5copy:hover::before {
+.skewed-container .skewed--5:hover::before,
+.skewed-container .copy--5:hover::before {
   -webkit-transform: skew(10deg) translate(0%, -8%) scale(1.01);
           transform: skew(10deg) translate(0%, -8%) scale(1.01);
 }
 
-#allskewed .title {
+.skewed-container .skewed__title {
   position: absolute;
   color: #fafafa;
   font-size: 2.5em;
@@ -320,8 +321,8 @@ canvas {
   transition: all 0.1s ease-out;
 }
 
-#allskewed .skewed:hover > .title,
-#allskewed .copies:hover > .title {
+.skewed-container .skewed:hover > .skewed__title,
+.skewed-container .copies:hover > .skewed__title {
   letter-spacing: 5px;
 }
 
@@ -501,63 +502,66 @@ canvas {
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1024 - 768)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 5em;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 1em;
     max-width: 50vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1.2em;
     max-width: 80vw;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  #allskewed .skewed,
-  #allskewed .copies {
+  .skewed-container .skewed,
+  .skewed-container .copies {
     width: 250px;
   }
-  #allskewed #skewed2 {
+  .skewed-container .skewed--1 {
+    left: 0;
+  }
+  .skewed-container .skewed--2 {
     left: 250px;
   }
-  #allskewed #skewed3 {
+  .skewed-container .skewed--3 {
     left: 500px;
   }
-  #allskewed #skewed4 {
+  .skewed-container .skewed--4 {
     left: 750px;
   }
-  #allskewed #skewed5 {
+  .skewed-container .skewed--5 {
     left: 1000px;
   }
-  #allskewed #skewed1copy {
+  .skewed-container .copy--1 {
     left: 1250px;
   }
-  #allskewed #skewed2copy {
+  .skewed-container .copy--2 {
     left: 1500px;
   }
-  #allskewed #skewed3copy {
+  .skewed-container .copy--3 {
     left: 1750px;
   }
-  #allskewed #skewed4copy {
+  .skewed-container .copy--4 {
     left: 2000px;
   }
-  #allskewed #skewed5copy {
+  .skewed-container .copy--5 {
     left: 2250px;
   }
-  #allskewed .skewed::before,
-  #allskewed .copied::before {
+  .skewed-container .skewed::before,
+  .skewed-container .copied::before {
     width: 600px;
   }
-  #allskewed .title {
+  .skewed-container .skewed__title {
     font-size: 40px;
     left: 220px;
   }
@@ -567,7 +571,7 @@ canvas {
   body header {
     position: fixed;
   }
-  #allcontents {
+  .content-container {
     opacity: 0;
   }
   .content {
@@ -617,12 +621,12 @@ canvas {
     border: none;
     cursor: pointer;
   }
-  .player {
+  .icons-container {
     padding: 20px;
     bottom: 10px;
   }
   .toggle__icon,
-  .back-icon {
+  .back__icon {
     margin: 0 10px;
     bottom: 20px;
   }
@@ -632,135 +636,135 @@ canvas {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(15px + (18 - 15) * ((100vw - 640px) / (7680 - 640)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 4em;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 1em;
     max-width: 90vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1.2em;
     max-width: 20em;
   }
 }
 
 @media screen and (max-width: 640px) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(15px + (18 - 15) * ((100vw - 400px) / (640 - 400)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 4.5em;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 1em;
     max-width: 90vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1.5em;
     max-width: 12em;
   }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(14px + (16 - 14) * ((100vw - 400px) / (640 - 400)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 3.6em;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 1em;
     max-width: 90vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1em;
     max-width: 80vw;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (400 - 320)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 4.5em;
     margin: 0;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 1em;
     max-width: 90vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1.4em;
     max-width: 240px;
   }
 }
 
 @media screen and (max-width: 400px) and (orientation: landscape) {
-  #allcontents .content {
+  .content-container .content {
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (400 - 320)));
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 1.5em;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 3.6em;
     margin: -1rem;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 0.8em;
     max-width: 90vw;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 1em;
     max-width: 90vw;
   }
 }
 
 @media screen and (max-width: 319px) {
-  #allcontents .content {
+  .content-container .content {
     font-size: 16px;
     width: 320px;
     overflow-x: visible;
   }
-  #allcontents .content .content__subtitle {
+  .content-container .content .content__subtitle {
     font-size: 20px;
   }
-  #allcontents .content .content__title {
+  .content-container .content .content__title {
     text-align: center;
     font-size: 56px;
     margin: 0;
   }
-  #allcontents .content .content__description {
+  .content-container .content .content__description {
     font-size: 16px;
     max-width: 300px;
   }
-  #allcontents .content .content__credits {
+  .content-container .content .content__credits {
     font-size: 18px;
     max-width: 240px;
   }
-  .player {
+  .icons-container {
     width: 320px;
   }
 }

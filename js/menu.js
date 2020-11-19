@@ -11,7 +11,7 @@ if (
 //* Show/hide tracks desription on mobiles
 
 const descriptionBtn = document.querySelector("#descriptionBtn");
-const content = document.querySelector("#allcontents");
+const content = document.querySelector(".content-container");
 
 descriptionBtn.addEventListener("click", () => {
   if (content.style.opacity == "0" || content.style.opacity == "") {
